@@ -1,0 +1,81 @@
+
+
+h1
+{
+    text-align: center;
+}
+
+#contenedor-grid
+{
+    text-align: center;
+    display: grid;
+    grid-template-areas: "uno dos dos tres" 
+                         "uno cinco siete cuatro"
+                         "uno ocho seis cuatro";
+    grid-template-rows: 200px 200px 200px 200px; /*para ajustar el tamaño de las finas*/
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*para ajustar el tamaño de las columnas*/
+    gap: 20px; /*para ajustar el margen de cuanto quiero que se alejen las cajas entre si*/
+}
+
+.caja
+{
+    border: solid black 2px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+h2
+{
+    position: relative;
+    top: 30%;
+}
+
+    .uno
+    {
+        grid-area: uno;
+        color: white;
+        background-color: green;
+    }
+    .dos
+    {
+        grid-area: dos;
+        color: white;
+
+        background-color: green;
+    }
+    .tres
+    {
+        grid-area: tres;
+        color: white;
+        background-color: red;
+    }
+    .cuatro
+    {
+        grid-area: cuatro;
+        color: white;
+        background-color: green;
+    }
+    .cinco
+    {
+        grid-area: cinco;
+        color: white;
+        background-color: #FFA500;
+    }
+    .seis
+    {
+        grid-area: seis;
+        color: white;
+        background-color: #FFA500;
+    }
+    .siete
+    {
+        grid-area: siete;
+        color: white;
+        background-color: red;
+    }
+    .ocho
+    {
+        grid-area: ocho;
+        color: white;
+        background-color: red;
+    }
